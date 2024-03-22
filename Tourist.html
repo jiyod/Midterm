@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surigao City</title>
+  <link rel="icon" type="image/x-icon" href="logo-removebg-preview.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+  <style>
+    .banner {
+      background-image: url(img1.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 70vh;
+      background-position: center;
+    }
+    
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .carousel-item {
+      transition: transform 0.9s ease-in-out;
+    }
+
+    .carousel-item-next.carousel-item-left,
+    .carousel-item-right.carousel-item-prev {
+      transform: translateX(0);
+    }
+
+    .carousel-item-next,
+    .active.carousel-item-right {
+      transform: translateX(40%);
+    }
+
+    .carousel-item-prev,
+    .active.carousel-item-left {
+      transform: translateX(40%);
+    }
+
+    .navbar-transparent {
+      background-color: transparent !important;
+    }
+    body {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+    }
+    .img-container {
+      position: relative;
+      overflow: hidden;
+      height: 200px; /* Fixed height for all images */
+    }
+    .img-fluid {
+      height: 100%; /* Make the images fill the container */
+      width: 100%; /* Ensure images fill the container horizontally */
+      object-fit: cover; /* Maintain aspect ratio and cover the container */
+    }
+    .img-description {
+      position: relative;
+      background-color: white;
+      color: rgb(0, 0, 0);
+      padding: 10px 20px;
+      border-radius: 0 0 5px 5px;
+      margin-top: -5px;
+    }
+    .position-relative {
+    overflow: hidden;
+  }
+
+  .position-relative img {
+    transition: transform 0.3s ease;
+  }
+
+  .position-relative:hover img {
+    transform: scale(1.1);
+  }
+  .active-link {
+      color: #70503d  !important;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark" id="navbar">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">
+                        <img src="Siquijor.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                        Siquijor
+                    </a>
+                </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white fs-5" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="Where.html">Where to go</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="Tourist.html">Tourist spots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="Events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white fs-5" href="Foodtrip.html">Foodtrip and Pasalubong</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid banner">
+        <div class="d-flex justify-content-center align-items-center pt-5">
+            <h1 class="text-center pt-5 text-white fw-bold" style="font-family: Barabara; text-transform: uppercase;">
+            </h1>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="text-left mt-5" style="font-family: Barabara; text-transform: upppercase;">Famous Spots</h2>
+        <div class="row mt-4">
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="Coco.png" class="img-fluid rounded" alt="Coco Grove Beach Resort" width="500" height="500">
+              <div class="img-description">
+                <h3>Coco Grove Beach Resort</h3>
+                <p>With 800 meters of white beach surrounded by turquoise water, Coco Grove Beach Resort offers complete relaxation and rejuvenation. Enjoy and relax in surroundings of complete nature, from tropical gardens, crystal blue sea to spectacular marine life and unbelievable sunsets all on a long white sandy beach</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="Cambuhagay.png" class="img-fluid rounded" alt="Cambuhagay Falls" width="500" height="500">
+              <div class="img-description">
+                <h3>Cambuhagay Falls</h3>
+                <p>Cambugahay Falls is arguably the best waterfall on Siquijor Island that is most famous for its tiered levels, strikingly blue water, and freshwater cascades, all of which are surrounded by lush rainforest.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="charsima.webp" class="img-fluid rounded" alt="Charisma Beach Resort" width="500" height="500">
+              <div class="img-description">
+                <h3>Charisma Beach Resort</h3>
+                <p>Located in Siquijor, a few steps from Solangon Beach, Charisma Beach Resort provides accommodation with a garden, free private parking, a shared lounge and a terrace. Featuring room service, this property also welcomes guests with a restaurant and an outdoor pool. Guests can have a drink at the bar.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="Pitogo.png" class="img-fluid rounded" alt="Pitogo Cliff" width="500" height="500">
+              <div class="img-description">
+                <h3>Pitogo Cliff</h3>
+                <p>The serene cliffside gets its name from the Pitogo trees that grow in the area. Prior to being one of Siquijor’s popular travel destinations, locals used to gather and hangout by the cliffside to enjoy the scenery.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="Cantabon.png" class="img-fluid rounded" alt="Cantabon Cave" width="500" height="500">
+              <div class="img-description">
+                <h3>Cantabon Cave</h3>
+                <p>One of Siquijor’s best things to do and interesting tourist spots is Cantabon Cave. Located in central Siquijor the Philippines, Cantabon Cave is an adventurous trail inside a pitch-black cave beneath the earth. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="Paliton.png" class="img-fluid rounded" alt="Paliton Beach" width="500" height="500">
+              <div class="img-description">
+                <h3>Paliton Beach</h3>
+                <p>Located in San Juan town, Paliton Beach is regarded as the prettiest beach in all of Siquijor. Its white sand beach and clear waters dotted with palm trees and starfish are popular among locals and tourists, making this beach the perfect place to spend your afternoon and watch the sky transition from day to night.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="Butterfly.png" class="img-fluid rounded" alt="Butterfly Sanctuary" width="500" height="500">
+              <div class="img-description">
+                <h3>Butterfly Sanctuary</h3>
+                <p>The Siquijor Butterfly Sanctuary is located up the hills, so you will mostly need to hop on a motorbike to reach this place. Nevertheless, what lies ahead is truly spectacular. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="Quesol.png" class="img-fluid rounded" alt="Quesol Mountain View" width="500" height="500">
+              <div class="img-description">
+                <h3>Quesol Mountain View</h3>
+                <p>Quesol Mountain View is very easy to spot as it is located along your way to the butterfly park. Once you are here, you’ll be treated to the best panoramic views that overlook Siquijor island and its pristine coastlines. See your photos from here trend!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="Church.png" class="img-fluid rounded" alt="Lazi Convent" width="500" height="500" >
+              <div class="img-description">
+                <h3>Lazi Convent</h3>
+                <p>Located at the province’s southern edge, the Lazi Convent, together with the San Isidro Labrador Church, plays a very crucial role in Siquijor’s history and its people’s faith. Its architecture and interiors are very intricate, as it was built within the 19th century, in a span of seven years!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <section id="contact-us" class="mt-0" style="background-color: rgb(75, 77, 78); margin-top: 0; padding-top: 0;">
+        <div class="container py-5"> 
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center" style="color: rgb(239, 239, 243);"></h1>
+                    <p class="lead"></p>
+                </div>
+                <div class="col">
+                    <a href="">
+                        <img src="" alt="" class="img-fluid" style="max-width: 5%; height: auto;">
+                    </a>
+                    <a href="">
+                        <img src="" alt="" class="img-fluid" style="max-width: 9%; height: auto;">
+                    </a>
+                    <a href="">
+                        <img src="" alt="" class="img-fluid" style="max-width: 5%; height: auto;">
+                    </a>
+                  <script>
+                    var url = window.location.href;
+                    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+                    navLinks.forEach(function(link) {
+                      if (link.href === url) {
+                        link.classList.add('active-link');
+                      }
+                    });
+                  </script>
+                </body>
+                </html>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+  
+  </script>
+</body>
+</html>

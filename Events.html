@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surigao City</title>
+  <link rel="icon" type="image/x-icon" href="logo-removebg-preview.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+  <style>
+    .banner {
+      background-image: url(http://surl.li/rnyvs);
+      background-size: cover;
+      width: 100%;
+      height: 70vh;
+      background-position: center;
+    }
+    
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .carousel-item {
+      transition: transform 0.9s ease-in-out;
+    }
+
+    .carousel-item-next.carousel-item-left,
+    .carousel-item-right.carousel-item-prev {
+      transform: translateX(0);
+    }
+
+    .carousel-item-next,
+    .active.carousel-item-right {
+      transform: translateX(40%);
+    }
+
+    .carousel-item-prev,
+    .active.carousel-item-left {
+      transform: translateX(40%);
+    }
+
+    .navbar-transparent {
+      background-color: transparent !important;
+    }
+    body {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+    }
+    .img-container {
+      position: relative;
+      overflow: hidden;
+      height: 200px; /* Fixed height for all images */
+    }
+    .img-fluid {
+      height: 100%; /* Make the images fill the container */
+      width: 100%; /* Ensure images fill the container horizontally */
+      object-fit: cover; /* Maintain aspect ratio and cover the container */
+    }
+    .img-description {
+      position: relative;
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 0 0 5px 5px;
+      margin-top: -5px;
+    }
+    .position-relative {
+    overflow: hidden;
+  }
+
+  .position-relative img {
+    transition: transform 0.3s ease;
+  }
+
+  .position-relative:hover img {
+    transform: scale(1.1);
+  } 
+  .active-link {
+      color: #70503d  !important;
+      font-weight: bold;
+    }
+    
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark" id="navbar">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">
+                        <img src="Siquijor.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                        Siquijor
+                    </a>
+                </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white fs-5" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="Where.html">Where to go</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="Tourist.html">Tourist spots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="Events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white fs-5" href="Foodtrip.html">Foodtrip and Pasalubong</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid banner">
+        <div class="d-flex justify-content-center align-items-center pt-5">
+            <h1 class="text-center pt-5 text-white fw-bold" style="font-family: Barabara; text-transform: uppercase;">
+            </h1>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="text-left mt-5" style="font-family: Barabara; text-transform: upppercase;">Major Events</h2>
+        <div class="row mt-4">
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="Siday.png" class="img-fluid rounded" alt="Siquijor Day" width="500" height="500">
+              <div class="img-description">
+                <h3>Siquijor Day </h3>
+                <p>This event celebrates the founding anniversary of Siquijor as a province. It typically includes parades, cultural performances, beauty pageants, and various competitions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="Bugwasfestival.png" class="img-fluid rounded" alt="Bugwas Festival" width="500" height="500">
+              <div class="img-description">
+                <h3>Bugwas Festival</h3>
+                <p>Bugwas Festival is a week-long celebration held in Larena, Siquijor. It showcases the town's cultural heritage through street dancing, music performances, sports events, and beauty pageants. The festival aims to promote unity, peace, and prosperity among the locals.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="Fiesta.png" class="img-fluid rounded" alt="Fiesta Celebrations" width="500" height="500">
+              <div class="img-description">
+                <h3>Fiesta Celebrations</h3>
+                <p>Each town in Siquijor celebrates its own fiesta in honor of its patron saint. These fiestas feature religious processions, traditional dances, music, feasting, and other cultural activities. The dates vary depending on the town and the patron saint.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="Lazi.png" class="img-fluid rounded" alt="Lazi Town Fiesta" width="500" height="500">
+              <div class="img-description">
+                <h3>Lazi Town Fiesta</h3>
+                <p>Lazi, a municipality in Siquijor, celebrates its fiesta in honor of St. Isidore the Farmer. The fiesta includes various events such as cultural presentations, sports competitions, and religious processions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="San.png" class="img-fluid rounded" alt="San Juan By The Bay" width="500" height="500">
+              <div class="img-description">
+                <h3>San Juan By The Bay</h3>
+                <p>This annual event in San Juan town features a beach party, live music, food stalls, and various water activities. It usually takes place in June and attracts both locals and tourists. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="position-relative">
+              <img src="Heal.png" class="img-fluid rounded" alt="Healing Festival" width="500" height="500">
+
+              <div class="img-description">
+                <h3>Healing Festival</h3>
+                <p> Siquijor is famous for its traditional healers known as "mananambals" or "mangkukulams." The Healing Festival, usually held in August, showcases traditional healing practices, herbal medicine, and spiritual rituals.</p>
+              </div>
+            </div>
+          </div>
+          
+         
+    
+    <section id="contact-us" class="mt-0" style="background-color: rgb(75, 77, 78); margin-top: 0; padding-top: 0;">
+        <div class="container py-5"> 
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center" style="color: rgb(239, 239, 243);"></h1>
+                    <p class="lead"></p>
+                </div>
+                <div class="col">
+                    <a href="">
+                        <img src="" alt="" class="img-fluid" style="max-width: 5%; height: auto;">
+                    </a>
+                    <a href="">
+                        <img src="" alt="" class="img-fluid" style="max-width: 9%; height: auto;">
+                    </a>
+                    <a href="">
+                        <img src="" alt="" class="img-fluid" style="max-width: 5%; height: auto;">
+                    </a>
+                  <script>
+                    var url = window.location.href;
+                    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+                    navLinks.forEach(function(link) {
+                      if (link.href === url) {
+                        link.classList.add('active-link');
+                      }
+                    });
+                  </script>
+                </body>
+                </html>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+  
+  </script>
+</body>
+</html>
